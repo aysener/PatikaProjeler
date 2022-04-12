@@ -1,37 +1,29 @@
 import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
-	int a,b,secim;
-    Scanner scan = new Scanner(System.in);
-    System.out.print("ilk sayiyi girin: ");
-    a = scan.nextInt();
-    System.out.print("ikinci sayiyi girin: ");
-    b = scan.nextInt();
+	// write your code here
+        String  kullaniciAdi ="aysnr";
+        String  password ="123456";
 
-    System.out.print("Bir işlem seçin: ");
+        Scanner scan= new Scanner(System.in);
+        System.out.println("kullanici adınızı girin:");
+        String kullanici  = scan.next();
+        System.out.println("şifrenizi girin:");
+        String sifre = scan.next();
 
-    System.out.print("1-Toplama \n 2-Cıkarma \n 3-Carpma \n 4-Bolme\n");
-    secim = scan.nextInt();
-
-    switch (secim){
-        case 1:
-            System.out.println("Toplam =" + (a+b));
-            break;
-        case 2:
-            System.out.print("Toplam =" + (a+b));
-            break;
-        case 3:
-            System.out.print("Toplam =" + (a+b));
-            break;
-        case 4:
-            System.out.print("Toplam =" + (a+b));
-            break;
-        default:
-            System.out.print("geçersiz işlem. Lüten 1 ile 4 arasında bir sayı seçin.");
-
-    }
+        if(kullaniciAdi == kullanici && password == sifre){
+            System.out.print("Giriş Başarılı Sayfay yönlendiriliyorsunuz...");
+        }
+        else if(kullaniciAdi == kullanici && password != sifre){
+            System.out.print("Hatalı sifre girdiniz");
+        }
+        else if(kullaniciAdi != kullanici && password == sifre){
+            System.out.print("Kullanici adi hatali");
+        }
+        else if(kullaniciAdi != kullanici && password != sifre){
+            System.out.print("Kullanici adi ve şifre hatali \n Bilgilerinizi mi unuttunuz.");
+        }
 
     }
 }
