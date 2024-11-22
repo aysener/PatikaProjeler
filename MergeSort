@@ -1,0 +1,17 @@
+[16,21,11,8,12,22] -> Merge Sort
+
+Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+Big-O gösterimini yazınız.
+
+Dizi tek eleman kalana kadar parçalanır
+1.Adım: Dizi 2 parçaya ayrılır; [16,21,11]  [8,12,22]
+2.Adım: Ayrılan diziler tekrar ayrılırlar:
+ [16,21,11] -->> [16,21] ve [11]
+ [8,12,22]-->> [8,12] ve [22] olarak parçalanırlar
+3.Adım:
+[16,21] -->>[16] ve [21]
+[8,12] -->> [8] ve [12] 
+olarak parçalara ayrılır ve birleştirme işlemine geçilir.
+[8,12]   [16,21]
+[8,11,12]   [16,21,22]
+[8,11,12,16,21,22]
