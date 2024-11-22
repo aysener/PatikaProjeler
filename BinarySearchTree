@@ -1,0 +1,33 @@
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+Bir eleman kök olarak belirlenir. Diğer elemanlar eğer kökten büyükse sağ, küçükse sol tarafına ekleneren debam eder.
+ilk elemanı kök olarak belirleyelim.
+5 7 den küçük olduğu için sol tarafına eklenir.
+
+     7
+5
+ İkinci adımda 1 7 den ve 5 ten küçük olduğu için 5 düğümünün sol tarafına eklenir.
+            7
+        5
+     1
+3.adım: 8 sayısı 7 den büyüktür ve kökün sağ tarafına eklenir.
+         7
+     5      8
+   1
+4.Adım:
+             7
+         5       8
+      1
+         3
+5.Adım:
+             7
+      5            8
+   1     6
+0     3
+
+.
+.
+.
+
+
+
+                         
